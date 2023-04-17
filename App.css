@@ -1,0 +1,52 @@
+.App {
+
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+
+  gap: 40px;
+
+  padding: 30px;
+}
+body{
+  overflow-x: hidden;
+}
+.valve2{
+  width: 213px;
+  height: 56px;
+  background-color: #1C2135;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+  border-radius: 20px;
+  margin: 20px;
+}
+.finalsmall{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon{
+  display: none;
+}
+@media screen and (max-width: 480px){
+  .App{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .valve2{
+    display: flex;
+  }
+  .icon{
+    display: flex;
+  }
+}
